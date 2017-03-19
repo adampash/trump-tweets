@@ -20,6 +20,12 @@ service: did-trump-tweet
 provider:
   name: aws
   runtime: nodejs4.3
+  environment:
+    TWITTER_CONSUMER_KEY: ${file(./config.js):fetchConsumerKey}
+    TWITTER_CONSUMER_SECRET: ${file(./config.js):fetchConsumerSecret}
+    TWITTER_ACCESS_TOKEN_KEY: ${file(./config.js):fetchAccessToken}
+    TWITTER_ACCESS_TOKEN_SECRET: ${file(./config.js):fetchAccessSecret}
+
   # If you want to change to a different AWS profile
   # from ~/.aws/credentials, you can do so here
   profile: default 

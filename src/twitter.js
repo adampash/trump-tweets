@@ -4,10 +4,10 @@ import moment from 'moment-timezone';
 import { asyncPipe } from './utils/pipe';
 
 const client = new Twitter({
-  consumer_key: 'HKMD3ekLJRqf1cD4ggWTTarhA',
-  consumer_secret: 'Qx5nj5yNZtIaEHFY2Y3pxICZiF7a9ZfjWa4ZeqyIQZI7ZFZ6Dz',
-  access_token_key: '648523-TTUnaTbeb5Gz2SLlZX39ptq8fb3O2fzcKu46baw3CQy',
-  access_token_secret: 'Z1oPQRkOf7AcOyz4ncKrjqcHMvPXeyn1evXGtBHrLy26e',
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 });
 
 export const getLatestTweets = screen_name => {

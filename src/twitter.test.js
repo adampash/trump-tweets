@@ -10,7 +10,7 @@ import { getLatestTweets, tweetedToday, didTrumpTweet } from './twitter';
 // });
 // describe('didTrumpTweet', () => {
 //   it('checks how many tweets trump has done today', async () => {
-//     const numTweets = await didTrumpTweet()
+//     const { numTweets } = await didTrumpTweet()
 //   });
 // });
 describe('tweetedToday', () => {
