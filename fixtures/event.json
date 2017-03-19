@@ -1,5 +1,24 @@
 {
-  "key3": "value3",
-  "key2": "value2",
-  "key1": "value1"
+  "session": {
+    "sessionId": "SessionId.a0e74e9b-3f91-42fe-aa83-f04e546d541e",
+    "application": {
+      "applicationId": "amzn1.ask.skill.618fb0a2-e692-4553-9596-f745e0a0919a"
+    },
+    "attributes": {},
+    "user": {
+      "userId": ""
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.da16da7b-4d66-4039-aaa1-449d4a925555",
+    "locale": "en-US",
+    "timestamp": "2017-03-19T22:33:22Z",
+    "intent": {
+      "name": "DidTrumpTweet",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
 }
