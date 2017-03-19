@@ -1,5 +1,5 @@
 {
-	"name": "serverless-starter",
+	"name": "did-trump-tweet",
 	"version": "1.0.0",
 	"main": "src/handler.js",
 	"license": "MIT",
