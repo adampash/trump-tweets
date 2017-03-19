@@ -21,5 +21,3 @@ deployment:
     branch: /^((feat)|(fix))-.*/
     commands:
       - yarn deploy:feat
-
-<Paste>
