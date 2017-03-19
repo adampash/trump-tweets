@@ -30,6 +30,13 @@ plugins:
 custom:
   webpackIncludeModules: true
 
+functions:
+	alexaHandler:
+		handler: handler
+		events:
+			- alexaSkill
+
+
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1

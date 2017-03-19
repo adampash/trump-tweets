@@ -1,0 +1,25 @@
+machine:
+  node:
+    version: 4.3
+dependencies:
+  override:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - yarn
+test:
+  override:
+    - yarn test
+deployment:
+  release:
+    tag: /^(?:v\d.\d.\d)$/
+    commands:
+      - yarn deploy:prod
+  stage:
+    branch: master
+    commands:
+      - yarn deploy:stage
+  feature:
+    branch: /^((feat)|(fix))-.*/
+    commands:
+      - yarn deploy:feat
+
+<Paste>
