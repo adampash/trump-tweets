@@ -37,10 +37,11 @@ custom:
   webpackIncludeModules: true
 
 functions:
-	alexaHandler:
-		handler: handler
-		events:
-			- alexaSkill
+  alexaHandler:
+    handler: handler.alexaHandler
+    events:
+      - alexaSkill
+
 
 
 # you can overwrite defaults here

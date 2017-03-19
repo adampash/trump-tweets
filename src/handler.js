@@ -1,7 +1,7 @@
 import { DID_TRUMP_TWEET, READ_TWEETS } from './intents';
 import { didTrumpTweet } from './twitter';
 
-const alexaHandler = async (event, _context, callback) => {
+export const alexaHandler = async (event, _context, callback) => {
   const { request: { intent: { name: intent } } } = event;
 
   callback(null, await getResponse(intent, event));
@@ -24,5 +24,3 @@ const getResponse = async (intent, event) => {
       return alexaResponse(`I didn't do a good job`);
   }
 };
-
-export default alexaHandler;
